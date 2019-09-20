@@ -30,7 +30,7 @@ namespace HolaMundo
         private void SaludarButton_Click(object sender, RoutedEventArgs e)
         {
             if(NombreTextBox.Text != "")
-                SaludoTextBlock.Text = "Hola, " + NombreTextBox.Text;
+                SaludoTextBlock.Text = "Holda, " + NombreTextBox.Text;
         }
 
         private void LimpiarButton_Click(object sender, RoutedEventArgs e)
