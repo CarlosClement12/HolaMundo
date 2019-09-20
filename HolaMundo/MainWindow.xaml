@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBlock x:Name="SaludoTextBlock" HorizontalAlignment="Left" Margin="246,121,0,0" TextWrapping="Wrap" Text="Hola nombre" VerticalAlignment="Top" Foreground="Red" FontSize="48"/>
+        <TextBox x:Name="NombreTextBox" HorizontalAlignment="Left" Height="23" Margin="246,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="SaludarButton" Content="Saludar" HorizontalAlignment="Left" Margin="390,218,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.64,0.65" Click="SaludarButton_Click"/>
+        <Button x:Name="LimpiarButton" Content="Limpiar" HorizontalAlignment="Left" Margin="470,218,0,0" VerticalAlignment="Top" Width="75" Click="LimpiarButton_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="178,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.673,2.312"><Run Text="Nombre:"/><LineBreak/><Run/></TextBlock>
+
     </Grid>
 </Window>

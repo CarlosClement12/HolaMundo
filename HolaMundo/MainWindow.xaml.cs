@@ -20,9 +20,23 @@ namespace HolaMundo
     /// </summary>
     public partial class MainWindow : Window
     {
+        public const string DEFAULT_MESSAGE = "Hola, Mundo";
         public MainWindow()
         {
             InitializeComponent();
+            SaludoTextBlock.Text = DEFAULT_MESSAGE;
+        }
+
+        private void SaludarButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(NombreTextBox.Text != "")
+                SaludoTextBlock.Text = "Hola, " + NombreTextBox.Text;
+        }
+
+        private void LimpiarButton_Click(object sender, RoutedEventArgs e)
+        {
+            SaludoTextBlock.Text = DEFAULT_MESSAGE;
+            NombreTextBox.Text = "";
         }
     }
 }
