@@ -20,7 +20,7 @@ namespace HolaMundo
     /// </summary>
     public partial class MainWindow : Window
     {
-        public const string DEFAULT_MESSAGE = "Hola, Mundo";
+        public const string DEFAULT_MESSAGE = "Hola,  Mundo";
         public MainWindow()
         {
             InitializeComponent();
