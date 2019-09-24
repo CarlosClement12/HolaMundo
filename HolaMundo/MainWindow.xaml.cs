@@ -31,6 +31,8 @@ namespace HolaMundo
         {
             if(NombreTextBox.Text != "")
                 SaludoTextBlock.Text = "Hola, " + NombreTextBox.Text;
+            else
+                SaludoTextBlock.Text = DEFAULT_MESSAGE;
         }
 
         private void LimpiarButton_Click(object sender, RoutedEventArgs e)
